@@ -3,7 +3,12 @@ const currencyFormatter = (num)=>{
 
 }
 const wordFormatter = (str)=>{
-    str = str.trim().toLowerCase();
-    return str[0].toUpperCase()+ str.slice(1);
+    if(str){
+        str = str.trim().toLowerCase();
+        return str[0].toUpperCase()+ str.slice(1);
+    }else{
+        return str
+    }
+    
 }
 export {currencyFormatter,wordFormatter}

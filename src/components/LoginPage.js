@@ -22,7 +22,7 @@ const LoginPage = (props) => {
         <div className='container login-container'>
 
             <form onSubmit={sumbit} >
-                <div class="row justify-content-center">
+                <div className="row justify-content-center">
                     <div className="col-md-6 login-form-1">
                         <div className="form-group mt-5">
                             <input type='text' placeholder="User name.." className="form-control" name='user' maxLength={30} required />
